@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<wf-panel-pi>
+    <plugin name="panel">
+        <_short>Panel</_short>
+        <group>
+            <_short>Sway Title</_short>
+            <option name="swaytitle_max_chars" type="int">
+                <_short>Maximum visible title characters</_short>
+                <default>20</default>
+            </option>
+        </group>
+    </plugin>
+</wf-panel-pi>
