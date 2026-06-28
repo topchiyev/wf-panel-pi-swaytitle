@@ -286,7 +286,7 @@ void WayfireSwayTitle::init(Gtk::HBox *container)
     label.set_name(PLUGIN_NAME);
     label.set_margin_start(4);
     label.set_margin_end(4);
-    label.set_text("-");
+    label.set_text("");
     label.show();
 
     container->pack_start(label, false, false);
@@ -318,7 +318,7 @@ void WayfireSwayTitle::refresh_title()
     std::string title = query_focused_title();
     if (title.empty())
     {
-        title = "-";
+        title = "";
     }
 
     const std::string shown = trim_title(title);
@@ -399,7 +399,7 @@ std::string WayfireSwayTitle::trim_title(const std::string& title) const
         return title;
     }
 
-    return value.substr(0, max).raw() + "...";
+    return value.substr(0, max).raw() + "…";
 }
 
 void WayfireSwayTitle::start_event_listener()
